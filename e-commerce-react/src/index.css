@@ -12,6 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #b6b1b1;
+  
 }
 .myntra_home {
   height: 45px;
@@ -157,6 +158,7 @@ header {
 }
 .item-image {
   width: 100%;
+  height: 200px;
 }
 .rating {
   font-size: 12px;
@@ -384,4 +386,10 @@ a.action_container:link {
 }
 .bag-item-count{
   margin-top: 20px;
+}
+.myntra_home{
+  height: 90px;
+}
+.space_icons{
+  margin-right: 10px;
 }

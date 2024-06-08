@@ -8,6 +8,8 @@ import Bag from "./routes/Bag.jsx"
 import Home from "./routes/HomePage.jsx"
 import {Provider} from "react-redux" 
 import myntraStore from './store/index.js'
+import Period from './components/Period.jsx'
+import './Period.css'
 const router=createBrowserRouter([
   {
     path:"/",
@@ -17,6 +19,10 @@ const router=createBrowserRouter([
       {
         path:"/bag",
         element:<Bag/>
+      },
+      {
+        path:"/calc",
+        element:<Period/>
       }
     ]
   }

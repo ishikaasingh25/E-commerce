@@ -3,6 +3,8 @@ import { IoHeart } from "react-icons/io5";
 import { FaShoppingBag } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {useSelector} from "react-redux";
+import { FaCalculator } from "react-icons/fa6";
+import { IoChatbubble } from "react-icons/io5";
 
 const Header=()=>{
 
@@ -13,15 +15,15 @@ const Header=()=>{
          <header>
         <div className="logo_container">
             <Link to="/">
-                <img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/></Link>
+                <img className="myntra_home" src="images/logo_e_commerce.jpg" alt="Myntra Home"/></Link>
         </div>
         <nav className="nav_bar">
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-            <a href="#">Home & Living</a>
-            <a href="#">Beauty</a>
-            <a href="#">Studio <sup>New</sup></a>
+            <a href="#">Sanitary</a>
+            <a href="#">Pregnancy</a>
+            <a href="#">Baby Care</a>
+            <a href="#">Medicine</a>
+            <Link to="/calc"><FaCalculator /></Link>
+            <a href="#"><IoChatbubble /></a>
         </nav>
         <div className="search_bar">
             <span className="material-symbols-outlined search_icon">search</span>
@@ -35,17 +37,17 @@ const Header=()=>{
 
             <div className="action_container">
                 <CgProfile />
-                <span className="material-symbols-outlined action_icon">Profile</span>
+                <span className="material-symbols-outlined action_icon space_icons">Profile</span>
                 <IoHeart />
-                <span className="action_name">
+                <span className="action_name space_icons">
                Wishlist
                 </span>
             </div>
 
             <Link className="action_container" to="/bag">
             <FaShoppingBag />
-                <span className="action_name">Bag</span>
-                <span className="bag-item-count">{bag.length}</span>
+                <span className="action_name space_icons">Bag</span>
+                <span className="bag-item-count space_icons">{bag.length}</span>
             </Link>
         </div>
     </header>
